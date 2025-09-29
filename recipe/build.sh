@@ -9,7 +9,7 @@ mkdir -p ${PREFIX}/bin
 ant download-deps
 ant -noinput -buildfile build.xml -Dbuild.targetjdk=19
 
-install -m 644 textidote.jar ${PREFIX}/libexec/textidote
+install -m 644 textidote-${PKG_VERSION}.jar ${PREFIX}/libexec/textidote/textidote.jar
 
 # Create bash and batch wrappers
 tee ${PREFIX}/bin/textidote << EOF
